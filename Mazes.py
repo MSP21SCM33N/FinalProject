@@ -38,4 +38,17 @@ maze = [
         [b,n,n,n,b,n,n,b],
         [b,b,b,b,b,b,b,b]
         ]
+#Maze 4
+x = 4
+y = 5
+maze = [
+        [r,r,r,r,r,r,r,r],
+        [r,n,n,n,n,r,r,r],
+        [r,n,r,r,n,n,r,r],
+        [r,n,n,n,n,r,r,r],
+        [r,n,r,r,n,n,r,r],
+        [r,n,r,r,n,n,r,r],
+        [r,n,r,r,n,r,r,r],
+        [g,n,r,r,n,r,r,r],
+        ]
          
