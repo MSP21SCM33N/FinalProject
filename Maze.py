@@ -55,13 +55,10 @@ while game:
     pitch = o['pitch']
     roll = o['roll']
     x,y = move_marble(pitch,roll,x,y)
+    if board[y][x] == g:
+        game == False
+        sense.show_message("You Win!")
     board[y][x] = w
     sense.set_pixels(sum(board,[]))
     sleep(0.05)
     board[y][x] = n
-    if board[y][x] == g:
-        game == False
-        sense.show_message("You Win!")
-    
-    
-
