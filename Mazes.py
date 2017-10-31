@@ -1,3 +1,4 @@
+
 #Maze 1
 x = 6
 y = 1
@@ -65,3 +66,17 @@ maze = [
         [b,n,n,n,n,b,b,b],
         [b,g,b,b,b,b,b,b]
         ]        
+
+#Maze 6
+x = 3
+y = 3
+maze = [
+        [b,n,b,b,b,b,n,b],
+        [b,n,n,n,n,n,n,n],
+        [b,n,b,b,b,b,n,b],
+        [b,n,b,n,n,b,n,b],
+        [b,n,b,b,n,b,n,b],
+        [n,n,n,n,n,b,n,b],
+        [b,b,b,b,b,b,n,b],
+        [b,b,b,g,n,n,n,b]
+        ]
