@@ -52,3 +52,16 @@ maze = [
         [g,n,r,r,n,r,r,r],
         ]
          
+#Maze 5
+x = 0
+y = 0
+maze = [
+        [n,n,n,n,b,b,b,b],
+        [b,n,b,n,n,n,n,b],
+        [b,n,b,n,b,b,n,b],
+        [b,n,b,n,n,b,n,b],
+        [b,b,b,b,n,b,n,b],
+        [b,b,b,b,n,n,n,b],
+        [b,n,n,n,n,b,b,b],
+        [b,g,b,b,b,b,b,b]
+        ]        
