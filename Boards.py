@@ -2,9 +2,9 @@
 #Maze 1
 x = 6
 y = 1
-boar = [
+board = [
         [b,b,b,b,b,b,b,b],
-        [b,n,n,n,n,n,n,b],
+        [b,n,n,n,n,n,w,b],
         [b,n,b,b,n,b,b,b],
         [b,n,n,n,n,b,g,b],
         [b,b,n,b,b,b,n,b],
@@ -19,7 +19,7 @@ y = 2
 board = [
         [b,b,b,b,b,b,b,b],
         [b,n,n,n,n,n,n,b],
-        [b,b,n,b,b,b,n,b],
+        [b,b,n,b,b,b,w,b],
         [b,n,n,b,n,b,b,b],
         [b,n,n,n,n,b,g,b],
         [b,n,b,b,n,b,n,b],
@@ -36,7 +36,7 @@ board = [
         [b,n,b,n,n,n,n,b],
         [b,n,n,n,b,b,n,b],
         [b,n,b,b,b,g,n,b],
-        [b,n,n,n,b,n,n,b],
+        [b,n,n,w,b,n,n,b],
         [b,b,b,b,b,b,b,b]
         ]
 #Maze 4
@@ -48,7 +48,7 @@ board = [
         [r,n,r,r,n,n,r,r],
         [r,n,n,n,n,r,r,r],
         [r,n,r,r,n,n,r,r],
-        [r,n,r,r,n,n,r,r],
+        [r,n,r,r,w,n,r,r],
         [r,n,r,r,n,r,r,r],
         [g,n,r,r,n,r,r,r],
         ]
@@ -57,7 +57,7 @@ board = [
 x = 0
 y = 0
 board = [
-        [n,n,n,n,b,b,b,b],
+        [w,n,n,n,b,b,b,b],
         [b,n,b,n,n,n,n,b],
         [b,n,b,n,b,b,n,b],
         [b,n,b,n,n,b,n,b],
@@ -74,7 +74,7 @@ board = [
         [b,n,b,b,b,b,n,b],
         [b,n,n,n,n,n,n,n],
         [b,n,b,b,b,b,n,b],
-        [b,n,b,n,n,b,n,b],
+        [b,n,b,w,n,b,n,b],
         [b,n,b,b,n,b,n,b],
         [n,n,n,n,n,b,n,b],
         [b,b,b,b,b,b,n,b],
