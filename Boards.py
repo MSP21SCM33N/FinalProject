@@ -2,7 +2,7 @@
 #Maze 1
 x = 6
 y = 1
-maze = [
+boar = [
         [b,b,b,b,b,b,b,b],
         [b,n,n,n,n,n,n,b],
         [b,n,b,b,n,b,b,b],
@@ -16,7 +16,7 @@ maze = [
 #Maze 2
 x = 6
 y = 2
-maze = [
+board = [
         [b,b,b,b,b,b,b,b],
         [b,n,n,n,n,n,n,b],
         [b,b,n,b,b,b,n,b],
@@ -29,7 +29,7 @@ maze = [
 #Maze 3
 x = 3
 y = 6
-maze = [
+board = [
         [b,b,b,b,b,b,b,b],
         [b,n,n,n,b,n,n,b],
         [b,n,b,b,b,b,n,b],
@@ -42,7 +42,7 @@ maze = [
 #Maze 4
 x = 4
 y = 5
-maze = [
+board = [
         [r,r,r,r,r,r,r,r],
         [r,n,n,n,n,r,r,r],
         [r,n,r,r,n,n,r,r],
@@ -56,7 +56,7 @@ maze = [
 #Maze 5
 x = 0
 y = 0
-maze = [
+board = [
         [n,n,n,n,b,b,b,b],
         [b,n,b,n,n,n,n,b],
         [b,n,b,n,b,b,n,b],
@@ -70,7 +70,7 @@ maze = [
 #Maze 6
 x = 3
 y = 3
-maze = [
+board = [
         [b,n,b,b,b,b,n,b],
         [b,n,n,n,n,n,n,n],
         [b,n,b,b,b,b,n,b],
