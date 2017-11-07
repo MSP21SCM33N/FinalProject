@@ -25,7 +25,7 @@ board[0] = [
             [b,n,n,n,n,b,g,b],
             [b,b,n,b,b,b,n,b],
             [b,n,n,b,n,n,n,b],
-            [b,n,n,n,n,b,n,b],
+            [b,w,n,n,n,b,n,b],
             [b,b,b,b,b,b,b,b]
             ]
 
@@ -38,7 +38,7 @@ board[1] = [
             [b,n,n,b,n,b,b,b],
             [b,n,n,n,n,b,g,b],
             [b,n,b,b,n,b,n,b],
-            [b,n,n,b,n,n,n,b],
+            [b,n,w,b,n,n,n,b],
             [b,b,b,b,b,b,b,b]
             ]
 #Maze 2
@@ -47,7 +47,7 @@ board[2] = [
             [b,b,b,b,b,b,b,b],
             [b,n,n,n,b,n,n,b],
             [b,n,b,b,b,b,n,b],
-            [b,n,b,n,n,n,n,b],
+            [b,n,b,n,n,n,w,b],
             [b,n,n,n,b,b,n,b],
             [b,n,b,b,b,g,n,b],
             [b,n,n,n,b,n,n,b],
@@ -60,7 +60,7 @@ board[3] = [
             [r,n,n,n,n,r,r,r],
             [r,n,r,r,n,n,r,r],
             [r,n,n,n,n,r,r,r],
-            [r,n,r,r,n,n,r,r],
+            [r,n,r,r,n,w,r,r],
             [r,n,r,r,n,n,r,r],
             [r,n,r,r,n,r,r,r],
             [g,n,r,r,n,r,r,r],
@@ -69,7 +69,7 @@ board[3] = [
 #Maze 4
 ballLoc[4] = (0, 0)
 board[4] = [
-            [n,n,n,n,b,b,b,b],
+            [w,n,n,n,b,b,b,b],
             [b,n,b,n,n,n,n,b],
             [b,n,b,n,b,b,n,b],
             [b,n,b,n,n,b,n,b],
@@ -85,14 +85,14 @@ board[5] = [
             [b,n,b,b,b,b,n,b],
             [b,n,n,n,n,n,n,n],
             [b,n,b,b,b,b,n,b],
-            [b,n,b,n,n,b,n,b],
+            [b,n,b,w,n,b,n,b],
             [b,n,b,b,n,b,n,b],
             [n,n,n,n,n,b,n,b],
             [b,b,b,b,b,b,n,b],
             [b,b,b,g,n,n,n,b]
             ]
 
-
+x,y = ballLoc[select][1], ballLoc[select][0]
 
 '''
     board = [
@@ -157,26 +157,26 @@ while playing:
                     else:
                         select = 5
 while game:
-    x,y = ballLoc[select][1], ballLoc[select][0]
-        o = sense.get_orientation()
-        pitch = o['pitch']
-        roll = o['roll']
-        x,y = move_marble(pitch,roll,x,y)
-        if board[select][y][x] == g:
+    o = sense.get_orientation()
+    pitch = o['pitch']
+    roll = o['roll']
+    x,y = move_marble(pitch,roll,x,y)
+    if board[select][y][x] == g:
             game == False
             sense.show_message("You Win!")
             sense.show_message("Press up to play again and down to quit")
     board[select][y][x] = w
-        sense.set_pixels(sum(board[select],[]))
-        sleep(0.05)
-        board[select][y][x] = n
+    sense.set_pixels(sum(board[select],[]))
+    sleep(0.05)
+    board[select][y][x] = n 
+
 i = 0
-    while i == 0:
-        for event in sense.stick.get_events():
+while i == 0:
+    for event in sense.stick.get_events():
             if event.action == "pressed":
-                if event.direction == "up":
-                    i = 1
-                    playing = True
-                if event.direction == "down":
-                    i = 1
-                    playing = False
+            if event.direction == "up":
+                        i = 1
+                        playing = True
+            if event.direction == "down":
+                        i = 1
+                        playing = False
