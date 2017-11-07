@@ -21,6 +21,7 @@ board = [
         [b,n,n,n,n,n,n,b],
         [b,b,n,b,b,b,w,b],
         [b,n,n,b,n,b,b,b],
+
         [b,n,n,n,n,b,g,b],
         [b,n,b,b,n,b,n,b],
         [b,n,n,b,n,n,n,b],
@@ -80,3 +81,17 @@ board = [
         [b,b,b,b,b,b,n,b],
         [b,b,b,g,n,n,n,b]
         ]
+
+#Maze 7
+x = 6
+y = 1
+board = [
+        [b,b,b,n,n,n,b,b],
+        [b,b,b,n,b,b,n,b],
+        [b,n,b,n,b,b,n,b],
+        [n,n,n,n,b,b,n,b],
+        [b,n,b,n,n,b,n,b],
+        [b,b,b,b,n,n,n,b],
+        [b,b,b,b,b,b,b,b]
+        ]
+        
